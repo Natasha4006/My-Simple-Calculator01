@@ -11,6 +11,12 @@ $oper=$_POST['oper'];
 $num1=$_POST['num1'];
 $num2=$_POST['num2'];
 
+       if ($oper == 'div' && $num2 == 0) {
+        $result = 'Division by zero is not allowed'; 
+
+               
+                } else {
+
 
 switch($oper){
 
@@ -34,7 +40,7 @@ switch($oper){
        
        break;
    default:
-   //$result="Please select Operation";
+   //$result="Please select valid  Operation";
 }
    
 }
